@@ -3,14 +3,14 @@
   Alternatively an array could be used to hold all the children,
   but the dynamic resizing of the array means insertion would take longer on average. */
 
-function Node(value) {
+function TreeNode(value) {
   this.value = value;
   this.sibling = null;
   this.child = null;
 };
 
-Node.prototype.addChild = function (value) {
-  var newChild = new Node(value);
+TreeNode.prototype.addChild = function (value) {
+  var newChild = new TreeNode(value);
   newChild.sibling = this.child;
   this.child = newChild;
 };
