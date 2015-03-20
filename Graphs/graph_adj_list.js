@@ -1,8 +1,8 @@
 /*A Graph implementation using Adjacency Lists.
   Each adj list points to a Linked List type object with references to the next adj vertex.
   This implementation assumes the graph is weighted, in practice you would modify as necessary.
-  The number of vertices in the graph must be supplied, depending on how you are constructing
-  your graph, this will change.
+  The number of vertices in this implementation must be supplied, depending on how you are constructing
+  your graph in real life, this will change.
   In real practice, you would probably know some of this information.
   */
 function Graph(nVertices, directed) {
