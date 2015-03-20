@@ -12,5 +12,5 @@ function Node(value) {
 Node.prototype.addChild = function (value) {
   var newChild = new Node(value);
   newChild.sibling = this.child;
-  this.newChild = child;
+  this.child = newChild;
 };
