@@ -1,7 +1,7 @@
 /* A breadth-first search using the graph implementation in graph_adj_list.js
-   This is just the most basic implementation, it just finds a vertex. 
+   This is just the most basic implementation, it just finds a vertex.
    Your implementation will depend on the types of problems you're trying
-   to solve. Applications for topological sort and checking for bipartate
+   to solve. Applications for number of components and checking for bipartate
    are also located in this folder. */
 
 Graph.prototype.breadthFirstSearch = function (target) {
