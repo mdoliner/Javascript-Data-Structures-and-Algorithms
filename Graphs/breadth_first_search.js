@@ -12,13 +12,13 @@ Graph.prototype.breadthFirstSearch = function (target) {
   for (var i = 0; i < this.nVertices; i++) {
     if (status[i] === "U") {
       //Will do a breadth-first search on every component until it finds the target
-      result = result || bfs(i, target);
+      result = result || bfs(target, i);
     }
   }
 
   return result;
 
-  function bfs (startVtx, target) {
+  function bfs(target, startVtx) {
     var queue = [startVtx];
     while (queue.length > 0) {
       var vertex = queue.shift();
