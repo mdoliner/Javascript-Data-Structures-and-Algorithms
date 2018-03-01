@@ -1,5 +1,7 @@
-/*A depth-first search implementation using the Node class found in tree.js
-  For applications, such as shortest weighted distance, check out the algorithms in the Graphs folder */
+/* 
+  A depth-first search implementation using the Node class found in tree.js
+  For applications, such as shortest weighted distance, check out the algorithms in the Graphs folder 
+*/
 
 TreeNode.prototype.depthFirstSearch = function (value) {
   var result;
@@ -11,5 +13,5 @@ TreeNode.prototype.depthFirstSearch = function (value) {
     result = result || child.depthFirstSearch(value);
     child = child.sibling;
   }
-  return result || -1; //returns -1 if value not found
+  return result || null;
 }
