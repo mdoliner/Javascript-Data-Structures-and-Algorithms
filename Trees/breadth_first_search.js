@@ -14,5 +14,5 @@ TreeNode.prototype.breadthFirstSearch = function (value) {
       child = child.sibling;
     }
   }
-  return -1; //returns -1 if value not found
+  return null; //returns null if value not found
 }

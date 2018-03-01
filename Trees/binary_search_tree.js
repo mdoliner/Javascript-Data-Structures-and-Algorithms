@@ -1,4 +1,4 @@
-/*A basic unbalanced Binary Search Tree implementation*/
+/* A basic unbalanced Binary Search Tree implementation */
  
 function BSTNode(value) {
   this.value = value;
@@ -32,5 +32,5 @@ BSTNode.prototype.search = function (value) {
   } else {
     result = this.right && this.right.search(value);
   }
-  return result || -1;
+  return result || null;
 }
